@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="my.css">
+    <script src="my.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hd w">
+            <div class="ham">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ham_menu">
+                <p><img src="./img/top_r_search.png" alt=""></p>
+                <p>CREATOR</p>
+                <p>BRAND</p>
+                <p>ARTIST</p>
+                <p>제작문의</p>
+                <div class="sns">
+                    <a href="#">
+                        <img src="./img/twitter-brands.svg" alt="">
+                        <p>트위터 <br>바로가기</p>
+                    </a>
+                    <a href="#">
+                        <img src="./img/instagram-square-brands.svg" alt="">
+                        <p>인스타그램 <br>바로가기</p>
+                    </a>
+                </div>
+            </div>
+            <nav class="top_nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">CREATOR</a>
+                        <ul class="sub">
+                            <li class="sub_text">
+                                <div class="find_all">
+                                    <h2>FIND ALL</h2>
+                                    <p>머치머치의 특별한 크리에이터를<br>
+                                        모두 만나보세요!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="sub_img">
+                                <h2>NEW CREATORS</h2>
+                                <div class="creator_wrap">
+                                    <img src="./img/creator1.png" alt="">
+                                    <img src="./img/creator2.png" alt="">
+                                    <img src="./img/creator3.png" alt="">
+                                    <img src="./img/creator4.png" alt="">
+                                    <img src="./img/creator5.png" alt="">
+                                    <img src="./img/creator6.png" alt="">
+                                    <img src="./img/creator7.png" alt="">
+                                    <img src="./img/creator8.png" alt="">
+                                    <img src="./img/creator9.png" alt="">
+                                    <img src="./img/creator10.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">BRAND</a>
+                        <ul class="sub2">
+                            <li class="sub_text">
+                                <div class="find_all">
+                                    <h2>FIND ALL</h2>
+                                    <p>머치머치의 특별한 브랜드를<br>
+                                    모두 만나보세요!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="sub_img">
+                                <h2>BRANDS</h2>
+                                <div class="brand_wrap">
+                                    <img src="./img/brand1.png" alt="">
+                                    <img src="./img/brand2.png" alt="">
+                                    <img src="./img/brand3.png" alt="">
+                                    <img src="./img/brand4.png" alt="">
+                                    <img src="./img/brand5.png" alt="">
+                                    <img src="./img/brand6.png" alt="">
+                                    <img src="./img/brand7.png" alt="">
+                                    <img src="./img/brand8.png" alt="">
+                                    <img src="./img/brand9.png" alt="">
+                                    <img src="./img/brand10.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ARTIST</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <a href="index.html"><img src="./img/mani_logo.png" alt=""></a>
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <div class="top_member">
+                <div><span>제작문의</span></div>
+                <div>
+                    <img class="my_nav"  src="./img/top_r_my_w.png" alt="">
+                    <ul class="my">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="./my.html">회원가입</a></li>
+                        <li><a href="">주문조회</a></li>
+                        <li><a href="">리뷰보기</a></li>
+                    </ul>
+                </div>
+                <div><img src="./img/top_r_cart_w.png" alt=""></div>
+                <div><img src="./img/top_r_search_w.png" alt=""></div>
+                <div><span>ENG</span></div>
+            </div>
+            <!-- mobile top -->
+            <div class="mobile_top">
+                <img src="./img/top_r_my.png" alt="">
+            </div>
+            <div class="m_top_menu">
+                <p>로그인</p>
+                <p>회원가입</p>
+                <p>주문조회</p>
+                <p>리뷰보기</p>
+            </div>
+        </div>
+    </header>
+
+    <form action="joinok.php" method="post" name="join_form">
+        <section class="joinD">
+            <h3>회원가입</h3>
+            <label for="uid">아이디 <strong>*</strong></label>
+            <div>
+                <input type="text" name="uid" id="uid">
+                <button onclick="id_check()">중복아이디 검색</button>
+                <p><strong>*</strong>
+                    중복아이디 검색
+                    최소 8자 ~ 최대 20자를 입력하세요.</p>
+            </div>
+
+            <label for="pwd">패스워드 <strong>*</strong></label>
+            <div>
+                <input type="password" name="pwd" id="pwd">
+                <p><strong>*</strong>
+                    중복아이디 검색
+                    최소 8자 ~ 최대 20자를 입력하세요.</p>
+            </div>
+
+            <label for="repwd">패스워드확인<strong>*</strong></label>
+            <div>
+                <input type="password" name="repwd" id="repwd">
+            </div>
+
+            <label for="u_name">이름 <strong>*</strong></label>
+            <div>
+                <input type="text" name="u_name" id="u_name">
+            </div>
+
+            <label for="mobile">전화번호<strong>*</strong></label>
+            <div>
+                <input type="tel" name="mobile1" id="mobile1">-
+                <input type="tel" name="mobile2" id="mobile2">-
+                <input type="tel" name="mobile3" id="mobile3">
+
+                <p><strong>*</strong>
+                    핸드폰번호를 꼭 입력해주세요!(미입력시 회원가입이 정상적으로 되지 않을수도 있습니다.)</p>
+                <p><strong>*</strong>
+                    핸드폰번호를 입력하시면 민원처리 진행상황 알림 서비스를 받을수 있습니다.</p>
+            </div>
+            <label for="email_id">이메일<strong>*</strong></label>
+            <div>
+                <input type="text" name="email_id" id="email_id">@
+                <input type="text" name="email_add" id="email_add">
+                <select name="email_sel" id="email_sel" onchange="chang_email()">
+                    <option value="" selected>직접입력</option>
+                    <option value="naver.com">naver</option>
+                    <option value="gmail.com">gmail</option>
+                    <option value="nate.com">nate</option>
+                </select>
+            </div>
+            <div class="btns">
+                <button type="button" onclick="joinform_check()">가입하기</button>
+                <button type="reset">취소하기</button>
+                <button type="button" onclick="history.back()" link="index.html">이전페이지로</button>
+            </div>
+        </section>
+    </form>
+</body>
+
+</html>
